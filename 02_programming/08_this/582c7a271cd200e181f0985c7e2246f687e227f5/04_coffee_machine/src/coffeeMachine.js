@@ -24,3 +24,11 @@ const machine = {
 };
 
 module.exports = machine;
+
+/*expresso: function () {
+    if (this.litersOfCoffee >= 0.08) {
+      this.litersOfCoffee = this.litersOfCoffee - 0.08;
+      return true;
+    } else {
+      return false;
+    }*/
