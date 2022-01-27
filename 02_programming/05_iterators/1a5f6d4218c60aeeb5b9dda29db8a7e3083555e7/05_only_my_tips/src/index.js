@@ -1,5 +1,10 @@
 function onlyMyTips(invoices) {
   // Code here
+  invoices.forEach((element) => {
+    if (waiter === "Yourself") {
+      return invoices.tip;
+    }
+  });
 }
 
 const todaysInvoices = [
