@@ -12,9 +12,9 @@ let storageHell = [
 
 function formatStorage(array) {
   // Code your function here
-  const formattedArray = [];
   // const taille = storageHell.length - 1;
   const unParUn = array.toString();
+  const formattedArray = [unParUn];
   // const pus = formattedArray.push(unParUn);
   return formattedArray;
 }
