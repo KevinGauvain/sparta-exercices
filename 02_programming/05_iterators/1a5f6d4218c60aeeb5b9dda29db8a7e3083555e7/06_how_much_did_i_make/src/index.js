@@ -1,5 +1,12 @@
 function howMuchDidIMake(invoices) {
   // Code here
+  const filtered = invoices.filter((element) => element.waiter === "Yourself");
+  //console.log(filtered);
+  const maped = filtered.map((element) => element.tip);
+  //console.log(maped);
+  const reduced = maped.reduce((a, b) => a + b);
+  //console.log(reduced);
+  return reduced;
 }
 
 const invoices = [
