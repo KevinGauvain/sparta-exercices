@@ -1,5 +1,7 @@
 // import fetch from "node-fetch";
 
+import { resolveConfig } from "prettier";
+
 function waitFor(time: number): Promise<void> {
   // setTimeout(time);
   return new Promise((resolve, reject) => {
@@ -11,6 +13,9 @@ function waitFor(time: number): Promise<void> {
     resolve(console.log(`This will be printed after ${time / 1000} seconds`));
   });
 }
+
+// correction :
+// setTimeOut (() => resolve(`This will be printed after ${time / 1000} seconds`), time);
 
 export { waitFor };
 
