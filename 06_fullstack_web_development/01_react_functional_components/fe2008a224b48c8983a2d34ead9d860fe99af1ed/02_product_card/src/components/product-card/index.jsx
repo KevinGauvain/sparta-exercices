@@ -4,12 +4,12 @@ import CardBody from "../../../src/components/product-card/body";
 import CardFooter from "../../../src/components/product-card/footer";
 import zelda from "../../../data/zelda";
 
-const ProductCard = (zelda) => {
+const ProductCard = (props) => {
   return (
     <div>
-      <CardHeader props={zelda} />
-      <CardBody props={zelda} />
-      <CardFooter props={zelda} />
+      <CardHeader productName={props.product.name} platformsLogos={props.product.platforms} />
+      {/* <CardBody product={zelda} />
+      <CardFooter product={zelda} /> */}
     </div>
   );
 };
