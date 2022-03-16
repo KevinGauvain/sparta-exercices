@@ -1,9 +1,10 @@
 import React from "react";
 
-const CardFooter = () => {
+const CardFooter = (props) => {
+  // console.log("CardFooter : ", props);
   return (
     <div>
-      <a href="/zelda/:slug"></a>
+      <a href={"games/" + props.slug}>Link SLug</a>
     </div>
   );
 };

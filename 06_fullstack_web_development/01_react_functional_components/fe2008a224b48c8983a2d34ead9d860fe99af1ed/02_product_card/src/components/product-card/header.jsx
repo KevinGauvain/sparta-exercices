@@ -1,15 +1,14 @@
 import React from "react";
-// import zelda from "zelda";
 
 const CardHeader = (props) => {
-  console.log("CardHeader props : ", props);
+  // console.log("CardHeader props : ", props.name);
   return (
     <div>
-      <p>{props.productName}</p>
+      <p>{props.name}</p>
       {/* <img src={props.platformsLogos.platform_logo.url} alt="Platforms Logos" /> */}
-      {props.platformsLogos.map((platform) => {
+      {props.platformLogos.map((platformUrl) => {
         // return <p key={platform.platform_logo.url}> url :{platform.platform_logo.url}</p>;
-        return <img key={platform.platform_logo.url} src={platform.platform_logo.url} alt="Platforms Logo" />;
+        return <img key={platformUrl} src={platformUrl} alt="Platform Logos" />;
       })}
     </div>
   );

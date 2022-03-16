@@ -19,6 +19,7 @@ Keep in mind that you shouldn't spend too long on making this card beautiful, bu
 ![card example](./assets/images/card.png)
 
 The card shown above is made of three parts:
+
 - A header
 - A body
 - A footer
@@ -28,20 +29,25 @@ Each part must be a different component and they must display informations like 
 ![product card zoning](./assets/images/product-card-zoning.png)
 
 The `src/components` folder contains four files:
+
 - `index.jsx` the main file to import from when using the `ProductCard` component.
 - `header.jsx` exports the `CardHeader` component.
 
   It must display:
-    - product name
-    - platforms logos
+
+  - product name
+  - platforms logos
+
 - `body.jsx` exports the `CardBody` component.
-  
+
   It must display:
-    - product cover
-    - game first release date
-    - genres names
-    - game summary
-    - a **unique** button which hides or shows screenshots on click. Screenshots must be displayed in in the body.
+
+  - product cover
+  - game first release date
+  - genres names
+  - game summary
+  - a **unique** button which hides or shows screenshots on click. Screenshots must be displayed in in the body.
+
 - `footer.jsx` exports the `CardFooter` component.
 
   It must display a link to `/games/:slug`.
