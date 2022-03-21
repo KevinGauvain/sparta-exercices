@@ -6,5 +6,12 @@ type TimerProps = {
 };
 
 export const Timer: React.FC<TimerProps> = ({ timerId, removeTimer }) => {
-  return <p>TIMER</p>;
+  return (
+    <div>
+      <li className="list-group-item d-flex align-items-center  justify-content-between">
+        <p className="text-center">X seconds</p>
+        <div className="btn btn-danger">Delete</div>
+      </li>
+    </div>
+  );
 };
